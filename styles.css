@@ -297,7 +297,7 @@ a {
 /* Contact me */
 
 #contact {
-    padding: 100px 15px;
+    padding: 100px 15px 50px;
 }
 
 #contact .section-title {
@@ -356,13 +356,53 @@ a {
     color: #fff;
 }
 
+#contact .networks {
+    display: flex;
+    justify-content: space-around;
+}
+
+#contact .networks button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+    border: none;
+}
+
+#contact .networks a {
+    color: #000;
+    font-size: 30px;
+    /* text-align: center; */
+}
+
+#contact .networks .a-text {
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+#contact .byEmail {
+    display: flex;
+    justify-content: center;
+}
+
+#contact p {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+#contact p span {
+    text-decoration: underline;
+}
+
 /* Footer */
 
 footer {
     background-color: #000;
     color: #fff;
     text-align: center;
-    padding: 30px 0;
+    padding: 50px 0;
 }
 
 footer a {
