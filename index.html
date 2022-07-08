@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,700;1,300;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+    <title>TomasFH Portfolio</title>
+</head>
+<body>
+    <!-- Header -->
+    <section id="home">
+        <div class="container">
+            <header>
+                <div class="header-container">
+                    <h1>TFH</h1>
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li><a href="#home" class="selected" onclick="select(this)">HOME</a></li>
+                            <li><a href="#about" onclick="select(this)">ABOUT</a></li>
+                            <li><a href="#services" onclick="select(this)">SERVICES</a></li>
+                            <li><a href="#portfolio" onclick="select(this)">PORTFOLIO</a></li>
+                            <li><a href="#contact" onclick="select(this)">CONTACT</a></li>
+                        </ul>
+                    </nav>
+
+                    <!-- Menu Icons -->
+                    <div id="icon-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+
+                    <!-- Social Networks -->
+                    <div class="networks">
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        <a href=""><i class="fa-brands fa-github"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram-square"></i></a>
+                    </div>
+                </div>
+            </header>
+            <div class="presentation">
+                <p class="welcome">Welcome!</p>
+                <h2>I'm <span>Tomás Francisco Holgado</span>, a Full Stack Web Developer.</h2>
+                <p class="description">Acá va a ir la descripción en su debido momento.</p>
+                <a href="#portfolio">Go to Portfolio</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About me -->
+    <section id="about">
+        <div class="photo-container">
+            <img src="/img/foto.jpg" alt="not found" id="my-photo">
+        </div>
+        <div class="about-me" id="about-me">
+            <p class="section-title">About Me</p>
+            <h2>Hi! I'm <span>Tomás Francisco Holgado</span> </h2>
+            <h3>And I'm a <span>Full Stack web Developer</span></h3>
+            <p>Y acá agrego mas texto acerca de mí después cuando se me ocurra qué poner...</p>
+            <p>Y acá agrego mas texto acerca de mí después cuando se me ocurra qué poner... (x2)</p>
+            <a href="#">Download CV</a>
+        </div>
+    </section>
+
+    <!-- Services (Lo voy a cambiar a Tecnologías) --> 
+    <!-- <section id="services">
+        <h3 class="section-title">SERVICES</h3>
+        <div class="row">
+            <div class="service">
+                <span class="icon"><i class="fa-solid fa-code"></i></span>
+                <h4></h4>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Portfolio -->
+    <section id="portfolio">
+        <h3 class="section-title">MY PROjECTS</h3>
+        <div class="row">
+            <div class="project">
+                <div class="overlay">
+                    <img src="/img/foto-pf-marketplace.png" alt="img not found">
+                    <div class="info">
+                        <h4>MarketPlace</h4>
+                        <p>An app where you can search for product by it's name, order them or filter by price, create an account for buying or selling products, chat with the buyer/seller, rate products and much more!</p>
+                        <p>*(This project was made in a 5 person group)*</p>
+                    </div>
+                </div>
+            </div>
+            <div class="project">
+                <div class="overlay">
+                    <img src="/img/foto-pi-videogame2.png" alt="img not found">
+                    <div class="info">
+                        <h4>Videogames App</h4>
+                        <p>An app where you can search for videogames by it's name, order them alphabetically or by punctuation, filter by genre, view any videogame details and add your videogames!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Me -->
+    <section id="contact">
+        <h3 class="section-title">Contact me</h3>
+        <div class="form-container">
+            <form action="">
+                <div class="half row">
+                    <input type="text" placeholder="Full name..." class="half-input">
+                    <input type="text" placeholder="E-mail..." class="half-input">
+                </div>
+                <div class="row">
+                    <input type="text" placeholder="Subject..." class="full-input">
+                </div>
+                <div class="row">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Your message..." class="full-input"></textarea>
+                </div>
+
+                <input type="submit" value="Send message" class="send-btn">
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>2022 All rights reserved.</p>
+        <div class="networks">
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            <a href=""><i class="fa-brands fa-github"></i></a>
+            <a href=""><i class="fa-brands fa-instagram-square"></i></a>
+        </div>
+    </footer>
+
+    <!-- Responsive Menu -->
+    <script src="script.js"></script>
+</body>
+</html>

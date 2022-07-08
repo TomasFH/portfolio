@@ -1,0 +1,446 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f3f3f3;
+    font-family: 'Open Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+#home {
+    background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url("/img/una-taza-de-javascript.png");
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+}
+
+#home .container header {
+    background-color: rgba(0,0,0,.8);
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    top: 0;
+}
+
+#home .container header .header-container {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+#home .container header .header-container h1 {
+    text-align: center;
+    color: #d04238;
+}
+#home .container header .header-container nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+#home .container header .header-container nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 12px;
+    font-weight: 400;
+    transition: .5s;
+}
+
+#home .container header .header-container nav ul li a:hover {
+    color: #d04238;
+}
+
+#home .container header .header-container .networks a {
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    margin-left: 10px;
+    transition: .5s;
+}
+
+#home .container header .header-container .networks a:hover {
+    color: #d04238;
+}
+
+#home .container header .header-container .selected {
+    color: #d04238;
+}
+
+#home .container .presentation {
+    max-width: 1100px;
+    height: 100vh;
+    margin: auto;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#home .container .presentation .welcome {
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+#home .container .presentation h2 {
+    font-size: 55px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+#home .container .presentation h2 span {
+    color: #d04238;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#home .container .presentation .description {
+    max-width: 700px;
+    margin: 25px auto;
+    font-size: 22px;
+    text-align: center;
+}
+
+#home .container .presentation a {
+    text-decoration: none;
+    display: inline-block;
+    margin: 25px;
+    padding: 20px 25px;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: .5s;
+}
+
+#home .container .presentation a:hover {
+    background-color: #d04238;
+}
+
+#icon-nav {
+    color: #fff;
+    display: none;
+}
+
+/* About me Section */
+
+#about {
+    max-width: 1100px;
+    margin: auto;
+    padding: 100px 15px;
+    color: #111135;
+    display: flex;
+}
+
+#about .photo-container {
+    max-width: 400px;
+    margin-right: 80px;
+}
+
+#about .photo-container img {
+    padding: 20px;
+    width: 100%;
+    border-radius: 20px;
+    background-color: #d5d5d5;
+    position: relative;
+    left: -50px;
+    opacity: 0;
+}
+
+#about .photo-container .my-photo-effect {
+    left: 0;
+    opacity: 1;
+    transition: .5s linear;
+}
+
+#about .about-me {
+    margin: 0 40px;
+    opacity: 0;
+}
+
+#about .about-me-effect {
+    opacity: 1;
+    transition: .6s linear;
+}
+
+#about .about-me .section-title {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #111135;
+    text-decoration: underline;
+    text-decoration-color: #bababa;
+    text-decoration-thickness: 5px;
+}
+
+#about .about-me h2 {
+    font-size: 34px;
+    font-weight: bold;
+    margin: 20px 0;
+    letter-spacing: 2px;
+}
+
+#about .about-me h2 span {
+    color: #d04238;
+}
+
+#about .about-me h3 {
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+#about .about-me p {
+    font-size: 14px;
+    line-height: 25px;
+    color: #565656;
+    margin-bottom: 12px;
+}
+
+#about .about-me a {
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: 1px solid #000;
+    margin-top: 30px;
+    transition: .5s;
+}
+
+#about .about-me a:hover {
+    background-color: #d04238;
+    color: #fff;
+}
+
+/* PORTFOLIO */
+
+#portfolio {
+    max-width: 1100px;
+    padding: 100px 0;
+    margin: auto;
+}
+
+#portfolio .section-title {
+    text-align: center;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #111135;
+    text-decoration: underline;
+    text-decoration-color: #bababa;
+    text-decoration-thickness: 5px;
+}
+
+#portfolio .row {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+
+#portfolio .row .project {
+    max-width: 450px;
+    border: 1px solid #000;
+    margin: 0 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+#portfolio .row .project img {
+    width: 100%;
+    height: 100%;
+    filter: grayscale(1);
+    object-fit: cover;
+    transition: .5s;
+}
+
+#portfolio .row .project:hover img {
+    filter: grayscale(0);
+}
+
+#portfolio .row .project .info {
+    position: absolute;
+    left: 0;
+    background-color: rgba(0,0,0,.8);
+    color: #d04238;
+    width: 100%;
+    padding: 10px;
+    opacity: 0;
+    bottom: -40px;
+    transition: .5s;
+}
+
+#portfolio .row .project:hover .info {
+     opacity: 1;
+     bottom: 0;
+}
+
+/* Contact me */
+
+#contact {
+    padding: 100px 15px;
+}
+
+#contact .section-title {
+    margin-bottom: 20px;
+    font-size: 22px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #111135;
+    text-decoration: underline;
+    text-decoration-color: #d5d5d5;
+    text-decoration-thickness: 5px;
+}
+
+#contact .form-container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+#contact .form-container .row {
+    margin-bottom: 15px;
+}
+
+#contact .form-container .half {
+    display: flex;
+    justify-content: space-between;
+}
+
+#contact .form-container input,
+#contact .form-container textarea {
+    padding: 20px;
+    border-radius: 20px;
+    border: none;
+    border: 1px solid #919191;
+}
+
+#contact .form-container .half input {
+    width: 48%;
+}
+
+#contact .form-container .full-input {
+    width: 100%;
+}
+
+#contact .send-btn {
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+    margin: auto;
+    cursor: pointer;
+    padding: 10px 15px;
+    transition: .5s;
+}
+
+#contact .send-btn:hover {
+    background-color: #d04238;
+    color: #fff;
+}
+
+/* Footer */
+
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    margin: 5px;
+    font-size: 26px;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width:800px) {
+    .networks {
+        display: none;
+    }
+    nav {
+        display: none;
+    }
+    nav.responsive {
+        display: block;
+        background-color: rgba(0,0,0,.8);
+        width: 100%;
+        position: absolute;
+        top: 53px;
+        left: 0;
+        padding: 10px 0;
+    }
+    nav.responsive ul {
+        display: block !important;
+        text-align: center;
+    }
+    nav.responsive ul li {
+        margin: 5px 0 ;
+    }
+    #icon-nav {
+        display: block;
+    }
+    #home .container .presentation h2 {
+        font-size: 40px;
+    }
+    #about {
+        padding: 50px 0;
+        display: block;
+    }
+    #about .photo-container {
+        max-width: 200px;
+        margin: auto; 
+    }
+    #about .photo-container img {
+        padding: 8px;
+    }
+    #about .about-me .section-title {
+        text-align: center;
+    }
+    #about .about-me h2 {
+        font-size: 25px;
+        text-align: center;
+    }
+    /* por acá pondría lo que corresponda con las tecnologías (1:02 h) */
+
+    #portfolio {
+        padding: 50px 0;
+    }
+    #portfolio .row {
+        display: block;
+    }
+    #portfolio .row .project {
+        margin: 10px auto;
+    }
+    #contact {
+        padding: 50px 15px;
+    }
+    #contact .form-container .half {
+        margin-bottom: 15px;
+        display: block;
+    }
+    #contact .form-container .half input {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+}
