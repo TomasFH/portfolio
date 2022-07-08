@@ -139,6 +139,48 @@ a {
     display: none;
 }
 
+/* Tecnologies section */
+
+#tecnologies {
+    padding: 100px 15px;
+    text-align: center;
+    background-color: #d11407c2;
+}
+
+#tecnologies .section-title {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #111135;
+    text-decoration: underline;
+    text-decoration-color: #bababa;
+    text-decoration-thickness: 5px;
+}
+
+#tecnologies .row {
+    display: grid;
+    grid-template-columns: repeat(3, 285px);
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: 30px auto;
+}
+
+#tecnologies .row .tecnology {
+    height: 175px;
+    background-color: rgb(220, 220, 220);
+    padding: 30px;
+    margin: 0 5px;
+    border-radius: 5px;
+    transition: .5s;
+    margin-bottom: 20px;
+}
+
+#tecnologies .row .tecnology span {
+    font-size: 50px;
+}
+#tecnologies .row .tecnology h4 {
+    font-size: 30px;
+}
+
 /* About me Section */
 
 #about {
@@ -301,7 +343,7 @@ a {
 }
 
 #contact .section-title {
-    margin-bottom: 20px;
+    margin-bottom: 24px;
     font-size: 22px;
     text-align: center;
     text-transform: uppercase;
@@ -357,8 +399,11 @@ a {
 }
 
 #contact .networks {
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(3, 285px);
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: 30px auto;
 }
 
 #contact .networks button {
