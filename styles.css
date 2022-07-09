@@ -506,7 +506,10 @@ footer a {
         text-align: center;
     }
     /* por acá pondría lo que corresponda con las tecnologías (1:02 h) */
-
+    #tecnologies .row {
+        display: flex;
+        flex-direction: column;
+    }
     #portfolio {
         padding: 50px 0;
     }
@@ -526,5 +529,9 @@ footer a {
     #contact .form-container .half input {
         width: 100%;
         margin-bottom: 15px;
+    }
+    #contact .networks {
+        display: flex;
+        flex-direction: column;
     }
 }
