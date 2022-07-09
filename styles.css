@@ -259,6 +259,7 @@ a {
 
 #about .about-me a {
     display: inline-block;
+    margin: 0 25px;
     text-decoration: none;
     color: #000;
     font-weight: 600;
