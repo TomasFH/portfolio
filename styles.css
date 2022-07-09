@@ -139,15 +139,15 @@ a {
     display: none;
 }
 
-/* Tecnologies section */
+/* Technologies section */
 
-#tecnologies {
+#technologies {
     padding: 100px 15px;
     text-align: center;
     background-color: #d11407c2;
 }
 
-#tecnologies .section-title {
+#technologies .section-title {
     font-size: 24px;
     text-transform: uppercase;
     color: #111135;
@@ -156,7 +156,7 @@ a {
     text-decoration-thickness: 5px;
 }
 
-#tecnologies .row {
+#technologies .row {
     display: grid;
     grid-template-columns: repeat(3, 285px);
     justify-content: space-between;
@@ -164,7 +164,7 @@ a {
     margin: 30px auto;
 }
 
-#tecnologies .row .tecnology {
+#technologies .row .tecnology {
     height: 175px;
     background-color: rgb(220, 220, 220);
     padding: 30px;
@@ -174,10 +174,10 @@ a {
     margin-bottom: 20px;
 }
 
-#tecnologies .row .tecnology span {
+#technologies .row .tecnology span {
     font-size: 50px;
 }
-#tecnologies .row .tecnology h4 {
+#technologies .row .tecnology h4 {
     font-size: 30px;
 }
 
@@ -507,7 +507,7 @@ footer a {
         text-align: center;
     }
     /* por acá pondría lo que corresponda con las tecnologías (1:02 h) */
-    #tecnologies .row {
+    #technologies .row {
         display: flex;
         flex-direction: column;
     }
