@@ -258,8 +258,10 @@ a {
 }
 
 #about .about-me a {
+    width: 220px;
     display: inline-block;
-    margin: 0 25px;
+    margin: 0 15px;
+    text-align: center;
     text-decoration: none;
     color: #000;
     font-weight: 600;
@@ -400,16 +402,15 @@ a {
 }
 
 #contact .networks {
-    display: grid;
-    grid-template-columns: repeat(3, 285px);
-    justify-content: space-between;
+    display: flex;
+    justify-content: space-around;
+    justify-items: center;
     max-width: 1100px;
     margin: 30px auto;
 }
 
 #contact .networks button {
-    flex-direction: row;
-    align-items: center;
+    width: 250px;
     margin: 20px 0;
     border: none;
 }
@@ -417,7 +418,6 @@ a {
 #contact .networks a {
     color: #000;
     font-size: 30px;
-    /* text-align: center; */
 }
 
 #contact .networks .a-text {
@@ -430,10 +430,11 @@ a {
     justify-content: center;
 }
 
-#contact p {
+#contact .byEmail p {
     margin-top: 20px;
     font-weight: bold;
     font-size: 22px;
+    text-align: center;
 }
 
 #contact p span {
@@ -458,6 +459,12 @@ footer a {
 }
 
 /* RESPONSIVE */
+@media screen and (max-width:900px) {
+    #technologies .row {
+        grid-template-columns: repeat(2, 300px);
+        justify-content: space-around;
+    }
+}
 
 @media screen and (max-width:800px) {
     .networks {
@@ -534,5 +541,6 @@ footer a {
     #contact .networks {
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
 }
